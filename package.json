@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Zhengqbbb <zhengqbbb@gmail.com> (https://github.com/Zhengqbbb)",
   "scripts": {
-    "build:vuepress": "pnpm --filter=\"vuepress*\"--stream build && pnpm --parallel --stream copy",
+    "build:vuepress": "pnpm --filter=\"vuepress*\" --stream build && pnpm copy:vuepress",
     "copy:vuepress": "pnpm --filter=\"vuepress*\" --parallel --stream copy",
     "dev:vuepress": "concurrently \"tsc -b ./vuepress/tsconfig.build.json --watch\" \"pnpm run copy:vuepress\"",
     "lint": "eslint .",
