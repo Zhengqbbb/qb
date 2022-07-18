@@ -3,8 +3,8 @@
 <p>
 <a href="https://github.com/vuepress/awesome-vuepress/blob/main/v2.md#community-plugins">
 <img style="display: inline-block;margin-right: 0.4rem;" alt="awesome-vuepress" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"/>
-<a href="https://github.com/Zhengqbbb/zhengqbbb.github.io/tree/main/packages/clipboard">
-<img style="display: inline-block;margin-right: 0.4rem;" alt="npm" src="https://img.shields.io/github/stars/zhengqbbb/zhengqbbb.github.io?style=social"/>
+<a href="https://github.com/Zhengqbbb/qb/tree/main/vuepress/plugin-clipboard">
+<img style="display: inline-block;margin-right: 0.4rem;" alt="npm" src="https://img.shields.io/github/stars/zhengqbbb/qb?style=social"/>
 </a>
 <br>
 <a href="https://www.npmjs.com/package/vuepress-plugin-clipboard">
@@ -14,9 +14,9 @@
 </a>
 </p>
 
-Home: https://blog.qbb.sh/docs/play/vuepress-plugin-clipboard
+Home: https://vuepress.qbb.sh/clipboard/
 
-Source: [Github](https://github.com/Zhengqbbb/zhengqbbb.github.io/tree/main/packages/clipboard)
+Source: [Github](https://github.com/Zhengqbbb/qb/tree/main/vuepress/plugin-clipboard)
 
 ## Install
 
@@ -125,7 +125,7 @@ export interface ClipboardOptions {
 ```
 ## License
 
-[MIT](https://github.com/Zhengqbbb/zhengqbbb.github.io/blob/main/packages/clipboard/LICENSE)
+[MIT](https://github.com/Zhengqbbb/qb/blob/main/LICENSE)
 Copyright (c) 2022-present Qiubin Zheng <zhengqbbb@gmail.com> (https://github.com/Zhengqbbb)
 
-> I just try my best to make thing well, Could you give a [star ⭐](https://github.com/Zhengqbbb/zhengqbbb.github.io) to encourage me ?
+> I just try my best to make thing well, Could you give a [star ⭐](https://github.com/Zhengqbbb/qb) to encourage me ?
