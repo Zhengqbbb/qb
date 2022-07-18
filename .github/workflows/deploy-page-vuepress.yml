@@ -1,9 +1,12 @@
 name: Deploy Vuepress Demo
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
+    paths:
+      - 'playgroup/vuepress/**'
+      - 'vuepress/**'
   workflow_dispatch:
 
 jobs:
@@ -12,6 +15,8 @@ jobs:
 
     env:
       NODE_VERSION: '16'
+      DOCS_GA_ID: G-PKN44NEZKD
+      DOCS_BAIDU_ID: 8f73cb8b2d3fe504688fa20d62d00fae
 
     steps:
       - uses: actions/checkout@v2
@@ -31,13 +36,14 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build
+        run: pnpm play:build:vuepress
 
-      # - name: 🎉 Deploy GitHub Pages 🎉
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     cname: qbb.sh
-      #     publish_dir: dist
-      #     publish_branch: gh-page
-      #     commit_message: "build: :books: deploy page"
+      - name: 🎉 Deploy GitHub Pages 🎉
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: Zhengqbbb/vuepress-plugin-website
+          cname: vuepress.qbb.sh
+          publish_dir: playgroup/vuepress/.vuepress/dist
+          publish_branch: main
+          commit_message: "build: :books: deploy page"
