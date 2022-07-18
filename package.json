@@ -9,14 +9,9 @@
     "copy:vuepress": "pnpm --filter=\"vuepress*\" --parallel --stream copy",
     "dev:vuepress": "concurrently \"tsc -b ./vuepress/tsconfig.build.json --watch\" \"pnpm run copy:vuepress\"",
     "lint": "eslint .",
-    "play:build:vuepress": "vuepress build",
-    "play:dev:vuepress": "vuepress build",
-    "play:serve:vuepress": "vuepress build",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.ts": "eslint --fix",
-    "package.json": "sort-package-json"
+    "play:build:vuepress": "pnpm --filter=\"qb-vuepress*\" docs:build",
+    "play:dev:vuepress": "pnpm --filter=\"qb-vuepress*\" docs:dev",
+    "play:serve:vuepress": "pnpm --filter=\"qb-vuepress*\" docs:serve"
   },
   "config": {
     "commitizen": {
@@ -35,9 +30,7 @@
     "esno": "^0.16.3",
     "eslint": "^8.19.0",
     "fast-glob": "^3.2.11",
-    "husky": "^8.0.1",
     "js-yaml": "^4.1.0",
-    "lint-staged": "^13.0.3",
     "ora": "^6.1.2",
     "pathe": "^0.3.2",
     "rimraf": "^3.0.2",

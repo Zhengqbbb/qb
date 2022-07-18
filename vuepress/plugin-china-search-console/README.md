@@ -38,7 +38,7 @@ npm install -D vuepress-plugin-china-search-console
 
 ```js
 // .vuepress/config.js
-import { searchConsolePlugin } from "vuepress-plugin-china-search-console";
+import { searchConsolePlugin } from 'vuepress-plugin-china-search-console'
 module.exports = {
   plugins: [
     searchConsolePlugin({
@@ -51,8 +51,8 @@ module.exports = {
 ## Use TS:
 ```ts
 // .vuepress/config.ts
-import { defineUserConfig } from "vuepress";
-import { searchConsolePlugin } from "vuepress-plugin-china-search-console";
+import { defineUserConfig } from 'vuepress'
+import { searchConsolePlugin } from 'vuepress-plugin-china-search-console'
 
 export default defineUserConfig({
   plugins: [
@@ -60,34 +60,34 @@ export default defineUserConfig({
       // options ...
     })
   ]
-});
+})
 ```
 
 ## Options:
 ```ts
 export interface SearchConsolePluginOptions {
-    /**
+  /**
      * @description: baidu 统计id | 填写后开启百度统计分析
      * @see: https://tongji.baidu.com/web/help/article?id=175&type=0&from_query=%E4%BB%A3%E7%A0%81%E8%8E%B7%E5%8F%96&index=0
      */
-    baiduId?: string;
-    /**
+  baiduId?: string
+  /**
      * @tip: 由于默认头条自动推送采用https，使用http网页不会生成
      * @description: 头条搜索 自动推送id | 填写后开启头条搜索自动推送
      * @see: https://zhanzhang.toutiao.com/page/inner/link/auto_include
      */
-    toutiaoAutoPushId?: string;
-    /**
+  toutiaoAutoPushId?: string
+  /**
      * @description: 是否开启百度自动推送 | 即页面自动推送收录建议
      * @default: true
      */
-    autoPushBaiduSwitch?: boolean;
-    /**
+  autoPushBaiduSwitch?: boolean
+  /**
      * @tip: 2021-01-27 获得官方邮件回复，目前自动收录已不使用
      * @description: 是否开启360自动推送 | 即页面自动推送收录建议
      * @default: false
      */
-    autoPush360Switch?: boolean;
+  autoPush360Switch?: boolean
 }
 ```
 

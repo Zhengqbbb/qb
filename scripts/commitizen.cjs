@@ -1,7 +1,6 @@
 const scopes = [
   'scripts',
-  'website',
-  'playground',
+  'site',
   'vp:*',
   'vp:clipboard',
   'vp:china-search',
@@ -10,13 +9,13 @@ const scopes = [
 /** @type {import('cz-git').CommitizenGitOptions} */
 module.exports = {
   alias: {
-    i: 'wip: initial commit',
-    s: 'style: update code format',
-    f: 'docs: fix typos',
-    r: 'docs: update README',
-    p: 'docs(playground): update playground',
-    b: 'build: bump dependencies',
-    c: 'chore: update config',
+    'i': 'wip: initial commit',
+    's': 'style: update code format',
+    'f': 'docs: fix typos',
+    'r': 'docs: update README',
+    'b': 'build: bump dependencies',
+    'c': 'chore: update config',
+    ':': 'docs(site): update playground',
   },
   scopes,
   maxHeaderLength: 100,

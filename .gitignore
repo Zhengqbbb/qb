@@ -1,14 +1,13 @@
 # VuePress files
-blog/.vuepress/.temp/
-blog/.vuepress/.cache/
-blog/.vuepress/dist/
+playgroup/vuepress/.vuepress/.temp/
+playgroup/vuepress/.vuepress/.cache/
+playgroup/vuepress/.vuepress/dist/
 /dist/
 /templates/
 
 # Dist files
 lib/
 
-.obsidian/
 urls.txt
 urls.json
 
