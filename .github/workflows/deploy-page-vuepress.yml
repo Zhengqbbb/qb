@@ -36,14 +36,16 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm play:build:vuepress
+        run: |
+          pnpm build:vuepress
+          pnpm play:build:vuepress
 
       - name: 🎉 Deploy GitHub Pages 🎉
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          external_repository: Zhengqbbb/vuepress-plugin-website
           cname: vuepress.qbb.sh
-          publish_dir: playgroup/vuepress/.vuepress/dist
+          external_repository: Zhengqbbb/vuepress-plugin-website
           publish_branch: main
+          publish_dir: playgroup/vuepress/.vuepress/dist
           commit_message: "build: :books: deploy page"
