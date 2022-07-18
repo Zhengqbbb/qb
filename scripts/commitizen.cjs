@@ -14,6 +14,7 @@ module.exports = {
     s: 'style: update code format',
     f: 'docs: fix typos',
     r: 'docs: update README',
+    p: 'docs(playground): update playground',
     b: 'build: bump dependencies',
     c: 'chore: update config',
   },
