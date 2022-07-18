@@ -43,7 +43,7 @@ jobs:
       - name: 🎉 Deploy GitHub Pages 🎉
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.QBENBEN_WEBSITE_DEPLOY_KEY }}
           cname: vuepress.qbb.sh
           external_repository: Zhengqbbb/vuepress-plugin-website
           publish_branch: main
