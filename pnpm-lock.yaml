@@ -40,7 +40,6 @@ importers:
     specifiers:
       '@vuepress/client': 2.0.0-beta.49
       '@vuepress/plugin-google-analytics': v2.0.0-beta.49
-      '@vuepress/plugin-shiki': v2.0.0-beta.49
       sass-loader: ^13.0.2
       serve: ^13.0.4
       vue: ^3.2.37
@@ -51,7 +50,6 @@ importers:
     devDependencies:
       '@vuepress/client': 2.0.0-beta.49
       '@vuepress/plugin-google-analytics': 2.0.0-beta.49
-      '@vuepress/plugin-shiki': 2.0.0-beta.49
       sass-loader: 13.0.2
       serve: 13.0.4
       vue: 3.2.37
@@ -841,15 +839,6 @@ packages:
     dependencies:
       '@vuepress/core': 2.0.0-beta.49
       prismjs: 1.28.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@vuepress/plugin-shiki/2.0.0-beta.49:
-    resolution: {integrity: sha512-stIXGhbyOnWzOqT2yNH6pMMjqyG9lN1U7OgqIPM4XQMZV9rdYu4LuAvV423e9l78KY6jnlsEeLP6oqtVBn5/gw==}
-    dependencies:
-      '@vuepress/core': 2.0.0-beta.49
-      shiki: 0.10.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3255,10 +3244,6 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /jsonc-parser/3.1.0:
-    resolution: {integrity: sha512-DRf0QjnNeCUds3xTjKlQQ3DpJD51GvDjJfnxUVWg6PZTo2otSm+slzNAxU/35hF8/oJIKoG9slq30JYOsF2azg==}
-    dev: true
-
   /jsonfile/6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
     dependencies:
@@ -4333,14 +4318,6 @@ packages:
     resolution: {integrity: sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==}
     dev: true
 
-  /shiki/0.10.1:
-    resolution: {integrity: sha512-VsY7QJVzU51j5o1+DguUd+6vmCmZ5v/6gYu4vyYAhzjuNQU6P/vmSy4uQaOhvje031qQMiW0d2BwgMH52vqMng==}
-    dependencies:
-      jsonc-parser: 3.1.0
-      vscode-oniguruma: 1.6.2
-      vscode-textmate: 5.2.0
-    dev: true
-
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
     dependencies:
@@ -4818,14 +4795,6 @@ packages:
       rollup: 2.77.0
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /vscode-oniguruma/1.6.2:
-    resolution: {integrity: sha512-KH8+KKov5eS/9WhofZR8M8dMHWN2gTxjMsG4jd04YhpbPR91fUj7rYQ2/XjeHCJWbg7X++ApRIU9NUwM2vTvLA==}
-    dev: true
-
-  /vscode-textmate/5.2.0:
-    resolution: {integrity: sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==}
     dev: true
 
   /vue-demi/0.13.5_vue@3.2.37:
