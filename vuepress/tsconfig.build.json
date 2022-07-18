@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "references": [
+    { "path": "./vuepress-plugin-china-search-console/tsconfig.build.json" },
+    { "path": "./vuepress-plugin-clipboard/tsconfig.build.json" },
+  ],
+  "files": []
+}
