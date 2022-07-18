@@ -14,7 +14,7 @@
 <table #vuepress>
   <thead>
     <tr>
-      <th width=30%>Plugin</th>
+      <th width=30%>Package</th>
       <th width=30%>Source Code</th>
       <th width=40%>Description</th>
     </tr>
