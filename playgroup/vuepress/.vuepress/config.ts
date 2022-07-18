@@ -84,7 +84,6 @@ export default defineUserConfig({
 
     themePlugins: {
       git: isProd,
-      prismjs: !isProd,
     },
   }),
   bundler: viteBundler(),
