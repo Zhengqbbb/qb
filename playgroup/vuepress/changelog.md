@@ -7,7 +7,7 @@ sidebarDepth: 0
 
 ## 2.1.3
 ### Features:
-- (plugin-*): compatible upgrade vuepress-next version to **2.0.0-beta.49**
+- (plugin-*): compatible upgrade vuepress-next version to <u>**2.0.0-beta.49**</u>
 
 ### Other:
 - website(guide) and source code change
@@ -17,7 +17,7 @@ sidebarDepth: 0
 ## 2.1.2
 
 ### Features:
-- (plugin-*): compatible upgrade vuepress-next version to **2.0.0-beta.48**
+- (plugin-*): compatible upgrade vuepress-next version to <u>**2.0.0-beta.48**</u>
 
 ### Other:
 - website(guide) domain change
@@ -26,4 +26,4 @@ sidebarDepth: 0
 ## 2.1.1
 
 ### Features:
-- (plugin-*): compatible upgrade vuepress-next version to **2.0.0-beta.46**
+- (plugin-*): compatible upgrade vuepress-next version to <u>**2.0.0-beta.46**</u>
