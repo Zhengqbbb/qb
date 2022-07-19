@@ -1,5 +1,4 @@
-import { viteBundler } from 'vuepress'
-import { defineUserConfig } from '@vuepress/cli'
+import { defineUserConfig, viteBundler } from 'vuepress'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { defaultTheme } from '@vuepress/theme-default'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
